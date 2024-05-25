@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 10%; 
+}
+
+header{
+    font-size: 60px;
+}
+
+.digitos{
+    margin-top: 20px;
+    font-size: 100px;
+    margin-bottom: 60px;
+}
+
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botoes{
+    text-align: center;
+}
+
+.secundario{
+    text-align: center;
+    margin-top: 12px;
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+h2{
+    font-size: 40px;
+}
+
+.tentativas{
+    margin-top: 30px;
+    font-size: 20px;
+}

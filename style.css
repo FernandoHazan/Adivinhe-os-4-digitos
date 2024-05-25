@@ -3,10 +3,14 @@ body{
     justify-content: center;
     gap: 100px;
     margin-top: 10%; 
+    background-color: #eff0d5;
+    font-family: "Montserrat", sans-serif;
 }
 
 header{
     font-size: 60px;
+    color: #171430;
+    font-weight: 500;
 }
 
 
@@ -17,20 +21,23 @@ header{
 }
 
 .botoes{
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 .secundario{
     text-align: center;
-    margin-top: 12px;
-    background-color: bisque;
+    background-color: #c4d4ab;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 2px 3px 8px black;
 }
 
 
 h2{
     font-size: 40px;
+    color: #171430;
+    font-weight: 400;
 }
 
 .tentativas{
@@ -41,22 +48,35 @@ h2{
 input{
     width: 60px;
     font-size: 60px;
-    border-bottom: 3px solid black;
+    border-bottom: 5px solid #171430;
     border-left: none;
     border-right: none;
     border-top: none;
+    outline: none;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-right: 8px;
+    background-color: #eff0d5;
 }
 
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-.digitos{
-    font-size: 100px;
-    margin-bottom: 60px;
+button{
+    background-color: #e0e0b6;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    padding: 10px;
+    box-shadow: 2px 3px 8px black;
 }
 
-.numeros{
-    display: flex;
-    flex-direction: column;
+button:hover{
+    background-color: #c4d4ab;
+}
+
+button:active{
+    background-color: #87b091;
 }

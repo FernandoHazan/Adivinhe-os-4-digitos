@@ -1,4 +1,4 @@
-body{
+.corpo{
     display: flex;
     justify-content: center;
     gap: 100px;
@@ -80,4 +80,48 @@ button:hover{
 
 button:active{
     background-color: #87b091;
+}
+
+
+
+@media only screen and (max-width : 1000px) {
+    
+    .corpo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 10%; 
+        background-color: #eff0d5;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .titulo{
+        font-size: 3em;
+        text-align: center;
+        color: #171430;
+        font-weight: 500;
+    }
+
+    .secundario{
+        text-align: center;
+        background-color: #c4d4ab;
+        border-radius: 10px;
+        box-shadow: 2px 3px 8px black;
+        width: 25em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

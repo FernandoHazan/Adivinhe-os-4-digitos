@@ -2,17 +2,14 @@ let numeroAleatorio = []
 let numeroChutado = []
 let posicao = 0
 let tem = 0
+let chute = ''
+document.getElementById('tentativas').innerHTML = ''
 
-const tentativas = document.createElement()
-const secundario = document.querySelector('.secundario')
-
-tentativas.classList.add("tentativas")
-tentativas.
 
 
 gerar()
 
-function gerar(){
+function gerar() {
 
     numeroAleatorio = []
 
@@ -30,12 +27,15 @@ function gerar(){
 
         document.getElementById('numero' + u).value = '' 
        }
+
+       document.getElementById('tentativas').innerHTML = ''
 }
 
 function chutar() {
     numeroChutado = []
     posicao = 0
     tem = 0
+    chute = ''
 
     for(let i = 1; i < 5; i++){
 
@@ -59,7 +59,13 @@ function chutar() {
         document.getElementById('numero' + u).value = '' 
        }
 
-       secundario.insertAdjacentElement("beforeend", tentativas)
+    for(let c = 0; c < 4; c++){
+
+        chute = chute + numeroChutado[c]
+    }
+      
+    let tentativa = document.getElementById('tentativas')
+    tentativa.innerHTML = tentativa.innerHTML + `<p class="tentativas">Seu chute foi ${chute}, ${tem} numeros certos e ${posicao} no lugar certo</p>`
 }
 
 

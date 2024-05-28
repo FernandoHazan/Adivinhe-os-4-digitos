@@ -11,30 +11,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
     <body>
-        <section class="principal">
-        <header>
-        <h1>Adivinhe os 4 números</h1>
-        </header>
-        <main>
+        <section class="principal">      
+            <div class="titulo">
+                <h1>Adivinhe os 4 números</h1>
+            </div>
+            <div>
+                <input type="number" class="form-control" id="numero1" name="nome"/>
+                <input type="number" class="form-control" id="numero2" name="nome"/>
+                <input type="number" class="form-control" id="numero3" name="nome"/>
+                <input type="number" class="form-control" id="numero4" name="nome"/>
         
-          
-        <input type="number" class="form-control" id="numero1" name="nome"/>
-        <input type="number" class="form-control" id="numero2" name="nome"/>
-        <input type="number" class="form-control" id="numero3" name="nome"/>
-        <input type="number" class="form-control" id="numero4" name="nome"/>
-        
-
-        <div class="botoes">
-        <button onclick="chutar()">Chutar</button>
-        <button onclick="gerar()">Novo Jogo</button>
-        </div>
-        </main>
+                <div class="botoes">
+                    <button onclick="chutar()">Chutar</button>
+                    <button onclick="gerar()">Novo Jogo</button>
+                </div>
+            </div>
         </section>
         
-        <div class="secundario" id="tentativas">
-        <h2>Suas tentativas:</h2>
-        <p class="tentativas">Seu chute foi 2903, 2 numeros certos e 1 no lugar certo</p>
-        </div> 
+        <section class="secundario">
+            <h2>Suas tentativas:</h2>
+            <div id="tentativas">
+                <p class="tentativas">Seu chute foi 2903, 2 numeros certos e 1 no lugar certo</p>
+            </div>    
+        </section> 
        
         <script src="main.js" defer></script>
     </body>

@@ -1,6 +1,7 @@
 let numeroAleatorio = []
 document.getElementById('tentativas').innerHTML = ''
 gerarNumeroAleatorio()
+let clique = 0
 
 function gerarNumeroAleatorio() {
 
@@ -23,6 +24,7 @@ function chutar() {
     let localCerto = 0
     let numeroIncluso = 0
     let chute = ''
+    clique++
 
     for(let i = 1; i < 5; i++){
 
@@ -50,23 +52,15 @@ function chutar() {
         chute = chute + numeroChutado[c]
     }
 
+
     let plural = numeroIncluso == 1 ? "numero certo" : "numeros certos"
+    let plural2 = clique == 1 ? 'tentativa' : 'tentativas'
       
     let tentativa = document.getElementById('tentativas')
     tentativa.innerHTML = tentativa.innerHTML + `<p class="tentativas">Seu chute foi ${chute}, ${numeroIncluso} ${plural} e ${localCerto} no lugar certo</p>`
-}
 
-function verificar(){
-    
-    for(let e = 0; e < 4; e++){
-
-        if(parseInt(numeroChutado[e]) == numeroAleatorio[e]){
-            localCerto++
-        }
-
-        if(numeroAleatorio.includes(numeroChutado[e])){
-            numeroIncluso++
-        }
+    if(numeroIncluso == 4 && localCerto == 4){
+        tentativa.innerHTML = `<p class="ganhou">Parabéns você ganhou com ${clique} ${plural2}</p>` + tentativa.innerHTML 
     }
 }
 
@@ -80,6 +74,17 @@ function novoJogo() {
        }
 
        document.getElementById('tentativas').innerHTML = ''
+
+       clique = 0
+}
+
+function duvidas(duvida){
+    
+    if(teste.style.display == "none"){
+        teste.style.display = "flex";
+    } else {
+        teste.style.display = "none";
+    }
 }
 
 

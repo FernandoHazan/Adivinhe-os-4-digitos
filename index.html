@@ -6,11 +6,17 @@
     <title>Adivinhe o número</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="duvida" id="teste">
+        <h3>Como Jogar</h3>
+        <p class="regras">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi maiores nam id magni illum beatae quisquam vitae iste explicabo ullam possimus, rem cumque optio, harum accusamus? Tempore obcaecati qui voluptas!</p>
+    </div>
     <main class="corpo">
         <section class="principal">      
             <div class="titulo">
@@ -30,9 +36,14 @@
         </section>
         
         <section class="secundario">
+            <div class="cabecalho">
             <h2>Suas tentativas:</h2>
+            <span class="material-symbols-outlined" onclick="duvidas()">
+                question_mark
+                </span>
+        </div>
             <div id="tentativas">
-                <p class="tentativas">Seu chute foi 2903, 2 numeros certos e 1 no lugar certo</p>
+                <p class="tentativas ganhou">Seu chute foi 2903, 2 numeros certos e 1 no lugar certo</p>
             </div>    
         </section> 
        </main>

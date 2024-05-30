@@ -40,6 +40,42 @@ body{
     width: 590px;
 }
 
+.material-symbols-outlined{
+    background-color: #171430;
+    color: #c4d4ab;
+    border-radius: 100%;
+    padding: 0.2em;
+    cursor: pointer;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.duvida{
+    position: absolute;
+    background-color: #171430;
+    color: #c4d4ab;
+    display: none;
+    padding: 3em;
+    gap: 3em;
+    margin: 5% 20%;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.regras{
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
 
 h2{
     font-size: 40px;
@@ -48,6 +84,12 @@ h2{
 }
 
 .tentativas{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.ganhou{
+    font-weight: 500;
     margin-top: 30px;
     font-size: 20px;
 }
@@ -87,6 +129,8 @@ button:hover{
 button:active{
     background-color: #87b091;
 }
+
+
 
 @media only screen and (max-width : 1430px) {
 
@@ -169,6 +213,54 @@ button:active{
             font-size: 3em;
             color: #171430;
             font-weight: 400;
+        }
+
+        input{
+            width: 15%;
+            border-bottom: 5px solid #171430;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            outline: none;
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            margin-right: 8px;
+            background-color: #eff0d5;
+        }
+
+        .botoes{
+            display: flex;
+            justify-content: center;
+            gap: 10%;
+        }
+
+        h2{
+            font-size: 175%;
+            color: #171430;
+            font-weight: 400;
+        }
+
+        .duvida{
+            position: absolute;
+            background-color: #171430;
+            color: #c4d4ab;
+            display: none;
+            padding: 2em;
+            gap: 3em;
+            margin: 5% 5%;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        h3{
+            font-size: 230%;
+            font-weight: 500;
+        }
+        
+        .regras{
+            font-size: 110%;
+            font-weight: 300;
         }
 }
 

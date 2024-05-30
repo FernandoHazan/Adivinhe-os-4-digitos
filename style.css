@@ -2,6 +2,11 @@ body{
     background-color: #eff0d5;
 }
 
+b{
+    color: #87b091;
+    font-weight: 600;
+}
+
 .corpo{
     display: flex;
     justify-content: center;
@@ -69,11 +74,13 @@ body{
 h3{
     font-size: 50px;
     font-weight: 500;
+    color: #87b091;
 }
 
 .regras{
     font-size: 1.5em;
     font-weight: 300;
+    color: #eff0d5;
 }
 
 

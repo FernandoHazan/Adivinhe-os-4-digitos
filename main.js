@@ -32,10 +32,10 @@ function chutar() {
     }
 
     for(let e = 0; e < 4; e++){
-
+    
         if(parseInt(numeroChutado[e]) == numeroAleatorio[e]){
             localCerto++
-        }
+        } 
 
         if(numeroAleatorio.includes(numeroChutado[e])){
             numeroIncluso++
